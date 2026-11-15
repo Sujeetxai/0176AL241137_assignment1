@@ -1,9 +1,10 @@
 
-limit = int(input("Enter the limit: "))
+start = int(input("Enter starting number: "))
+end = int(input("Enter ending number: "))
 
 print("Palindrome numbers are:")
 
-for i in range(limit + 1):
+for i in range(start, end + 1):
     n = i
     rev = 0
 
@@ -14,3 +15,5 @@ for i in range(limit + 1):
 
     if i == rev:
         print(i, end=" ")
+
+
